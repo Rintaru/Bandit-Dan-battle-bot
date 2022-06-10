@@ -1,0 +1,274 @@
+<robot name="onshape">
+<link name="thigh_bracket">
+<visual>
+<origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
+<geometry>
+<mesh filename="package:///thigh_bracket.stl"/>
+</geometry>
+<material name="thigh_bracket_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
+<geometry>
+<mesh filename="package:///thigh_bracket.stl"/>
+</geometry>
+<material name="thigh_bracket_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0882905 0.0438683 -0.0195855" rpy="0 0 0"/>
+<mass value="0.00417552" />
+<inertia ixx="2.17016e-07" ixy="1.35788e-21"  ixz="-8.47627e-08" iyy="3.64043e-07" iyz="8.35566e-22" izz="2.89792e-07" />
+</inertial>
+</link>
+
+<link name="servo">
+<visual>
+<origin xyz="-0.00575 1.38778e-17 -0.011" rpy="2.3915e-30 1.50846e-16 7.00748e-17" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-0.00575 1.38778e-17 -0.011" rpy="2.3915e-30 1.50846e-16 7.00748e-17" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-0.00539557 1.3775e-17 -0.0100053" rpy="0 0 0"/>
+<mass value="0.0504114" />
+<inertia ixx="2.92907e-06" ixy="1.55049e-22"  ixz="-2.14501e-07" iyy="4.82779e-06" iyz="1.34203e-23" izz="2.99518e-06" />
+</inertial>
+</link>
+
+<link name="servo_2">
+<visual>
+<origin xyz="0 -0.003 -0.0115" rpy="1.5708 1.5708 0" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 -0.003 -0.0115" rpy="1.5708 1.5708 0" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-9.6297e-20 -0.00399472 -0.0118544" rpy="0 0 0"/>
+<mass value="0.0504114" />
+<inertia ixx="2.99518e-06" ixy="2.14501e-07"  ixz="-1.98692e-22" iyy="2.92907e-06" iyz="2.32563e-23" izz="4.82779e-06" />
+</inertial>
+</link>
+
+<link name="knee_mount">
+<visual>
+<origin xyz="0.02 -2.08167e-17 0" rpy="-3.14159 -5.19963e-31 -1.13182e-17" />
+<geometry>
+<mesh filename="package:///knee_mount.stl"/>
+</geometry>
+<material name="knee_mount_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.02 -2.08167e-17 0" rpy="-3.14159 -5.19963e-31 -1.13182e-17" />
+<geometry>
+<mesh filename="package:///knee_mount.stl"/>
+</geometry>
+<material name="knee_mount_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0133553 -2.05638e-17 0.00239697" rpy="0 0 0"/>
+<mass value="0.00351559" />
+<inertia ixx="2.25727e-07" ixy="9.02483e-24"  ixz="-1.61691e-07" iyy="5.16506e-07" iyz="-2.27711e-24" izz="4.43653e-07" />
+</inertial>
+</link>
+
+<link name="servo_3">
+<visual>
+<origin xyz="0.01375 -6.93889e-18 -0.007" rpy="-1.65854e-31 1.92395e-30 -2.39783e-17" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0.01375 -6.93889e-18 -0.007" rpy="-1.65854e-31 1.92395e-30 -2.39783e-17" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.0141044 -7.07504e-18 -0.00600528" rpy="0 0 0"/>
+<mass value="0.0504114" />
+<inertia ixx="2.92907e-06" ixy="-1.29931e-22"  ixz="-2.14501e-07" iyy="4.82779e-06" iyz="1.0376e-24" izz="2.99518e-06" />
+</inertial>
+</link>
+
+<link name="part_1">
+<visual>
+<origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
+<geometry>
+<mesh filename="package:///part_1.stl"/>
+</geometry>
+<material name="part_1_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
+<geometry>
+<mesh filename="package:///part_1.stl"/>
+</geometry>
+<material name="part_1_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="-0.00496699 -1.30537e-17 0.00657987" rpy="0 0 0"/>
+<mass value="0.00578055" />
+<inertia ixx="3.06238e-07" ixy="-1.0859e-23"  ixz="8.94401e-09" iyy="9.21258e-07" iyz="7.89028e-26" izz="8.48031e-07" />
+</inertial>
+</link>
+
+<link name="servo_4">
+<visual>
+<origin xyz="1.38778e-17 -0.000206107 -0.00575" rpy="-1.5708 -6.56188e-32 1.47196e-17" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="1.38778e-17 -0.000206107 -0.00575" rpy="-1.5708 -6.56188e-32 1.47196e-17" />
+<geometry>
+<mesh filename="package:///servo.stl"/>
+</geometry>
+<material name="servo_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.000354429 0.000788612 -0.00575" rpy="0 0 0"/>
+<mass value="0.0504114" />
+<inertia ixx="2.92907e-06" ixy="2.14501e-07"  ixz="4.52234e-23" iyy="2.99518e-06" iyz="-1.8923e-24" izz="4.82779e-06" />
+</inertial>
+</link>
+
+<link name="left_foot">
+<visual>
+<origin xyz="0 0 0.00225" rpy="3.14159 -5.23129e-30 -2.32809e-31" />
+<geometry>
+<mesh filename="package:///left_foot.stl"/>
+</geometry>
+<material name="left_foot_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</visual>
+<collision>
+<origin xyz="0 0 0.00225" rpy="3.14159 -5.23129e-30 -2.32809e-31" />
+<geometry>
+<mesh filename="package:///left_foot.stl"/>
+</geometry>
+<material name="left_foot_material">
+<color rgba="0.615686 0.811765 0.929412 1.0"/>
+</material>
+</collision>
+<inertial>
+<origin xyz="0.00725072 0.0108246 0.00184006" rpy="0 0 0"/>
+<mass value="0.00951305" />
+<inertia ixx="5.9103e-06" ixy="7.46645e-07"  ixz="7.18778e-09" iyy="1.60668e-06" iyz="3.05683e-08" izz="7.38494e-06" />
+</inertial>
+</link>
+
+<joint name="ankle_servo_h" type="revolute">
+<origin xyz="0.00575 0.0237939 -0.00575" rpy="-1.5708 -1.5708 0" />
+<parent link="servo_4" />
+<child link="left_foot" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="ankle" type="fixed">
+<origin xyz="-0.00540709 -0.00271 0.0075" rpy="-3.14159 -3.11007e-26 -1.47196e-17" />
+<parent link="part_1" />
+<child link="servo_4" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="ankle_servo_v" type="revolute">
+<origin xyz="0.0195 6.93889e-18 0.017" rpy="5.52479e-16 -4.02837e-16 1.17242" />
+<parent link="servo_3" />
+<child link="part_1" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="knee" type="fixed">
+<origin xyz="0.02 -1.38778e-17 0.007" rpy="-3.14159 5.94521e-17 -2.96252e-16" />
+<parent link="knee_mount" />
+<child link="servo_3" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="knee_servo" type="revolute">
+<origin xyz="0 -0.023 -0.01725" rpy="-1.5708 0.474293 -3.18767e-16" />
+<parent link="servo_2" />
+<child link="knee_mount" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="thigh" type="fixed">
+<origin xyz="-0.01725 1.38778e-17 -0.014" rpy="-1.5708 4.70547e-30 -1.5708" />
+<parent link="servo" />
+<child link="servo_2" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+<joint name="thigh_servo" type="revolute">
+<origin xyz="0.0813147 0.0614459 -0.0195855" rpy="1.5708 -0.959931 -3.87553e-14" />
+<parent link="thigh_bracket" />
+<child link="servo" />
+<axis xyz="0 0 1"/>
+<limit effort="1" velocity="20" />
+<joint_properties friction="0.0"/>
+</joint>
+
+
+</robot>

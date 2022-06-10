@@ -45,7 +45,7 @@
 </material>
 </collision>
 <inertial>
-<origin xyz="-0.00539557 1.3775e-17 -0.0100053" rpy="0 0 0"/>
+<origin xyz="-0.00539557 1.37738e-17 -0.0100053" rpy="0 0 0"/>
 <mass value="0.0504114" />
 <inertia ixx="2.92907e-06" ixy="1.55049e-22"  ixz="-2.14501e-07" iyy="4.82779e-06" iyz="1.34203e-23" izz="2.99518e-06" />
 </inertial>
@@ -71,7 +71,7 @@
 </material>
 </collision>
 <inertial>
-<origin xyz="-9.6297e-20 -0.00399472 -0.0118544" rpy="0 0 0"/>
+<origin xyz="-9.74562e-20 -0.00399472 -0.0118544" rpy="0 0 0"/>
 <mass value="0.0504114" />
 <inertia ixx="2.99518e-06" ixy="2.14501e-07"  ixz="-1.98692e-22" iyy="2.92907e-06" iyz="2.32563e-23" izz="4.82779e-06" />
 </inertial>
@@ -123,33 +123,33 @@
 </material>
 </collision>
 <inertial>
-<origin xyz="0.0141044 -7.07504e-18 -0.00600528" rpy="0 0 0"/>
+<origin xyz="0.0141044 -7.0762e-18 -0.00600528" rpy="0 0 0"/>
 <mass value="0.0504114" />
 <inertia ixx="2.92907e-06" ixy="-1.29931e-22"  ixz="-2.14501e-07" iyy="4.82779e-06" iyz="1.0376e-24" izz="2.99518e-06" />
 </inertial>
 </link>
 
-<link name="part_1">
+<link name="ankle_mount">
 <visual>
 <origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
 <geometry>
-<mesh filename="package://battle_bot_description/meshes/part_1.stl"/>
+<mesh filename="package://battle_bot_description/meshes/ankle_mount.stl"/>
 </geometry>
-<material name="part_1_material">
+<material name="ankle_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
 <collision>
 <origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
 <geometry>
-<mesh filename="package://battle_bot_description/meshes/part_1.stl"/>
+<mesh filename="package://battle_bot_description/meshes/ankle_mount.stl"/>
 </geometry>
-<material name="part_1_material">
+<material name="ankle_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </collision>
 <inertial>
-<origin xyz="-0.00496699 -1.30537e-17 0.00657987" rpy="0 0 0"/>
+<origin xyz="-0.00496699 -1.32419e-17 0.00657987" rpy="0 0 0"/>
 <mass value="0.00578055" />
 <inertia ixx="3.06238e-07" ixy="-1.0859e-23"  ixz="8.94401e-09" iyy="9.21258e-07" iyz="7.89028e-26" izz="8.48031e-07" />
 </inertial>
@@ -218,7 +218,7 @@
 
 <joint name="ankle" type="fixed">
 <origin xyz="-0.00540709 -0.00271 0.0075" rpy="-3.14159 -3.11007e-26 -1.47196e-17" />
-<parent link="part_1" />
+<parent link="ankle_mount" />
 <child link="servo_4" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
@@ -228,7 +228,7 @@
 <joint name="ankle_servo_v" type="revolute">
 <origin xyz="0.0195 6.93889e-18 0.017" rpy="5.52479e-16 -4.02837e-16 1.17242" />
 <parent link="servo_3" />
-<child link="part_1" />
+<child link="ankle_mount" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>

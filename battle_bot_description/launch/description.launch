@@ -3,7 +3,7 @@
 
   <arg name="robot_namespace" default="/"/>
 
-  <param name="robot_description" command="$(find xacro)/xacro '$(find battle_bot_description)/urdf/battle-bot.urdf'
+  <param name="robot_description" command="$(find xacro)/xacro '$(find battle_bot_description)/urdf/battle-bot.urdf.xacro'
     robot_namespace:=$(arg robot_namespace)" />
 
 </launch>

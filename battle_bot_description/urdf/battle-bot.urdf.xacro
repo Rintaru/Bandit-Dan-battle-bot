@@ -1,4 +1,5 @@
-<robot name="battle-bot">
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="battle-bot">
 <link name="thigh_bracket">
 <visual>
 <origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
@@ -207,7 +208,7 @@
 </inertial>
 </link>
 
-<joint name="ankle_servo_h" type="revolute">
+<joint name="ankle_servo_h" type="continuous">
 <origin xyz="0.00575 0.0237939 -0.00575" rpy="-1.5708 -1.5708 0" />
 <parent link="servo_4" />
 <child link="left_foot" />
@@ -225,7 +226,7 @@
 <joint_properties friction="0.0"/>
 </joint>
 
-<joint name="ankle_servo_v" type="revolute">
+<joint name="ankle_servo_v" type="continuous">
 <origin xyz="0.0195 6.93889e-18 0.017" rpy="5.52479e-16 -4.02837e-16 1.17242" />
 <parent link="servo_3" />
 <child link="ankle_mount" />
@@ -243,7 +244,7 @@
 <joint_properties friction="0.0"/>
 </joint>
 
-<joint name="knee_servo" type="revolute">
+<joint name="knee_servo" type="continuous">
 <origin xyz="0 -0.023 -0.01725" rpy="-1.5708 0.474293 -3.18767e-16" />
 <parent link="servo_2" />
 <child link="knee_mount" />
@@ -261,7 +262,7 @@
 <joint_properties friction="0.0"/>
 </joint>
 
-<joint name="thigh_servo" type="revolute">
+<joint name="thigh_servo" type="continuous">
 <origin xyz="0.0813147 0.0614459 -0.0195855" rpy="1.5708 -0.959931 -3.87553e-14" />
 <parent link="thigh_bracket" />
 <child link="servo" />
@@ -269,6 +270,46 @@
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
+
+<transmission name="ankle_servo_v_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$ankle_servo_v_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="ankle_servo_v">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="ankle_servo_v_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$ankle_servo_v_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="ankle_servo_v">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="knee_servo_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$knee_servo_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="knee_servo">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="thigh_servo_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$thigh_servo_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="thigh_servo">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
 
 
 </robot>

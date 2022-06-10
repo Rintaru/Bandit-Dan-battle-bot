@@ -1,0 +1,4 @@
+[submodule "RPI_servo_control"]
+	path = RPI_servo_control
+	url = git@github.com:Rintaru/RPI_servo_control.git
+	branch = dev

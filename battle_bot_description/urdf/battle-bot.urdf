@@ -1,4 +1,4 @@
-<robot name="onshape">
+<robot name="battle-bot">
 <link name="thigh_bracket">
 <visual>
 <origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />

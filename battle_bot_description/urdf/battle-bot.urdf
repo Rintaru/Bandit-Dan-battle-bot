@@ -3,7 +3,7 @@
 <visual>
 <origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///thigh_bracket.stl"/>
+<mesh filename="package://battle_bot_description/meshes/thigh_bracket.stl"/>
 </geometry>
 <material name="thigh_bracket_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -12,7 +12,7 @@
 <collision>
 <origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///thigh_bracket.stl"/>
+<mesh filename="package://battle_bot_description/meshes/thigh_bracket.stl"/>
 </geometry>
 <material name="thigh_bracket_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -29,7 +29,7 @@
 <visual>
 <origin xyz="-0.00575 1.38778e-17 -0.011" rpy="2.3915e-30 1.50846e-16 7.00748e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -38,7 +38,7 @@
 <collision>
 <origin xyz="-0.00575 1.38778e-17 -0.011" rpy="2.3915e-30 1.50846e-16 7.00748e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -55,7 +55,7 @@
 <visual>
 <origin xyz="0 -0.003 -0.0115" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -64,7 +64,7 @@
 <collision>
 <origin xyz="0 -0.003 -0.0115" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -81,7 +81,7 @@
 <visual>
 <origin xyz="0.02 -2.08167e-17 0" rpy="-3.14159 -5.19963e-31 -1.13182e-17" />
 <geometry>
-<mesh filename="package:///knee_mount.stl"/>
+<mesh filename="package://battle_bot_description/meshes/knee_mount.stl"/>
 </geometry>
 <material name="knee_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -90,7 +90,7 @@
 <collision>
 <origin xyz="0.02 -2.08167e-17 0" rpy="-3.14159 -5.19963e-31 -1.13182e-17" />
 <geometry>
-<mesh filename="package:///knee_mount.stl"/>
+<mesh filename="package://battle_bot_description/meshes/knee_mount.stl"/>
 </geometry>
 <material name="knee_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -107,7 +107,7 @@
 <visual>
 <origin xyz="0.01375 -6.93889e-18 -0.007" rpy="-1.65854e-31 1.92395e-30 -2.39783e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -116,7 +116,7 @@
 <collision>
 <origin xyz="0.01375 -6.93889e-18 -0.007" rpy="-1.65854e-31 1.92395e-30 -2.39783e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -133,7 +133,7 @@
 <visual>
 <origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
 <geometry>
-<mesh filename="package:///part_1.stl"/>
+<mesh filename="package://battle_bot_description/meshes/part_1.stl"/>
 </geometry>
 <material name="part_1_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -142,7 +142,7 @@
 <collision>
 <origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
 <geometry>
-<mesh filename="package:///part_1.stl"/>
+<mesh filename="package://battle_bot_description/meshes/part_1.stl"/>
 </geometry>
 <material name="part_1_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -159,7 +159,7 @@
 <visual>
 <origin xyz="1.38778e-17 -0.000206107 -0.00575" rpy="-1.5708 -6.56188e-32 1.47196e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -168,7 +168,7 @@
 <collision>
 <origin xyz="1.38778e-17 -0.000206107 -0.00575" rpy="-1.5708 -6.56188e-32 1.47196e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -185,7 +185,7 @@
 <visual>
 <origin xyz="0 0 0.00225" rpy="3.14159 -5.23129e-30 -2.32809e-31" />
 <geometry>
-<mesh filename="package:///left_foot.stl"/>
+<mesh filename="package://battle_bot_description/meshes/left_foot.stl"/>
 </geometry>
 <material name="left_foot_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -194,7 +194,7 @@
 <collision>
 <origin xyz="0 0 0.00225" rpy="3.14159 -5.23129e-30 -2.32809e-31" />
 <geometry>
-<mesh filename="package:///left_foot.stl"/>
+<mesh filename="package://battle_bot_description/meshes/left_foot.stl"/>
 </geometry>
 <material name="left_foot_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>

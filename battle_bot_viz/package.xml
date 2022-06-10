@@ -1,25 +1,18 @@
 <?xml version="1.0"?>
 <package>
-  <name>husky_viz</name>
+  <name>battle_bot_viz</name>
   <version>0.6.3</version>
-  <description>Visualization configuration for Clearpath Husky</description>
+  <description>Visualization configuration for battle-bot</description>
 
-  <author email="rgariepy@clearpathrobotics.com">Ryan Gariepy</author>
-  <author email="mpurvis@clearpathrobotics.com">Mike Purvis</author>
-
+  <author email="rgariepy@clearpathrobotics.com">Daniel Ruiz</author>
   <maintainer email="tbaltovski@clearpathrobotics.com">Tony Baltovski</maintainer>
 
   <license>BSD</license>
-
-  <url type="website">http://ros.org/wiki/husky_viz</url>
-  <url type="bugtracker">https://github.com/husky/husky_desktop/issues</url>
-  <url type="repository">https://github.com/husky/husky_desktop</url>
 
   <buildtool_depend>catkin</buildtool_depend>
 
   <build_depend>roslaunch</build_depend>
 
-  <run_depend>husky_description</run_depend>
   <run_depend>joint_state_publisher</run_depend>
   <run_depend>robot_state_publisher</run_depend>
   <run_depend>joint_state_publisher_gui</run_depend>

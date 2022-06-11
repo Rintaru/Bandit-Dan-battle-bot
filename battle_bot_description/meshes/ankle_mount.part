@@ -1,13 +1,13 @@
 {
     "configuration": "default",
     "documentId": "3f0634926da3723867e4105d",
-    "documentMicroversion": "b6b299a8df1c028f18c1e00e",
-    "documentVersion": "1140d46b4e78480e46692330",
+    "documentMicroversion": "c12bfb52808155c5657214aa",
+    "documentVersion": "a6a181ea0f5e8cf4dcc41a4a",
     "elementId": "155b3112027808c25c867cd3",
     "fullConfiguration": "default",
     "id": "MefULGhKjT3CtKe83",
     "isStandardContent": false,
-    "name": "Part 1 <1>",
+    "name": "Ankle_Mount <1>",
     "partId": "JHD",
     "suppressed": false,
     "type": "Part"

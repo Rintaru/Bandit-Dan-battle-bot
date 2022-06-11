@@ -1,9 +1,10 @@
-<robot name="onshape">
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="battle-bot">
 <link name="thigh_bracket">
 <visual>
 <origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///thigh_bracket.stl"/>
+<mesh filename="package://battle_bot_description/meshes/thigh_bracket.stl"/>
 </geometry>
 <material name="thigh_bracket_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -12,7 +13,7 @@
 <collision>
 <origin xyz="0.0813147 0.0534459 -0.0195855" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///thigh_bracket.stl"/>
+<mesh filename="package://battle_bot_description/meshes/thigh_bracket.stl"/>
 </geometry>
 <material name="thigh_bracket_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -29,7 +30,7 @@
 <visual>
 <origin xyz="-0.00575 1.38778e-17 -0.011" rpy="2.3915e-30 1.50846e-16 7.00748e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -38,14 +39,14 @@
 <collision>
 <origin xyz="-0.00575 1.38778e-17 -0.011" rpy="2.3915e-30 1.50846e-16 7.00748e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </collision>
 <inertial>
-<origin xyz="-0.00539557 1.3775e-17 -0.0100053" rpy="0 0 0"/>
+<origin xyz="-0.00539557 1.37738e-17 -0.0100053" rpy="0 0 0"/>
 <mass value="0.0504114" />
 <inertia ixx="2.92907e-06" ixy="1.55049e-22"  ixz="-2.14501e-07" iyy="4.82779e-06" iyz="1.34203e-23" izz="2.99518e-06" />
 </inertial>
@@ -55,7 +56,7 @@
 <visual>
 <origin xyz="0 -0.003 -0.0115" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -64,14 +65,14 @@
 <collision>
 <origin xyz="0 -0.003 -0.0115" rpy="1.5708 1.5708 0" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </collision>
 <inertial>
-<origin xyz="-9.6297e-20 -0.00399472 -0.0118544" rpy="0 0 0"/>
+<origin xyz="-9.74562e-20 -0.00399472 -0.0118544" rpy="0 0 0"/>
 <mass value="0.0504114" />
 <inertia ixx="2.99518e-06" ixy="2.14501e-07"  ixz="-1.98692e-22" iyy="2.92907e-06" iyz="2.32563e-23" izz="4.82779e-06" />
 </inertial>
@@ -81,7 +82,7 @@
 <visual>
 <origin xyz="0.02 -2.08167e-17 0" rpy="-3.14159 -5.19963e-31 -1.13182e-17" />
 <geometry>
-<mesh filename="package:///knee_mount.stl"/>
+<mesh filename="package://battle_bot_description/meshes/knee_mount.stl"/>
 </geometry>
 <material name="knee_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -90,7 +91,7 @@
 <collision>
 <origin xyz="0.02 -2.08167e-17 0" rpy="-3.14159 -5.19963e-31 -1.13182e-17" />
 <geometry>
-<mesh filename="package:///knee_mount.stl"/>
+<mesh filename="package://battle_bot_description/meshes/knee_mount.stl"/>
 </geometry>
 <material name="knee_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -107,7 +108,7 @@
 <visual>
 <origin xyz="0.01375 -6.93889e-18 -0.007" rpy="-1.65854e-31 1.92395e-30 -2.39783e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -116,40 +117,40 @@
 <collision>
 <origin xyz="0.01375 -6.93889e-18 -0.007" rpy="-1.65854e-31 1.92395e-30 -2.39783e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </collision>
 <inertial>
-<origin xyz="0.0141044 -7.07504e-18 -0.00600528" rpy="0 0 0"/>
+<origin xyz="0.0141044 -7.0762e-18 -0.00600528" rpy="0 0 0"/>
 <mass value="0.0504114" />
 <inertia ixx="2.92907e-06" ixy="-1.29931e-22"  ixz="-2.14501e-07" iyy="4.82779e-06" iyz="1.0376e-24" izz="2.99518e-06" />
 </inertial>
 </link>
 
-<link name="part_1">
+<link name="ankle_mount">
 <visual>
 <origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
 <geometry>
-<mesh filename="package:///part_1.stl"/>
+<mesh filename="package://battle_bot_description/meshes/ankle_mount.stl"/>
 </geometry>
-<material name="part_1_material">
+<material name="ankle_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </visual>
 <collision>
 <origin xyz="-1.38778e-17 -1.38778e-17 -6.93889e-18" rpy="-3.25237e-30 -6.83855e-31 -1.47196e-17" />
 <geometry>
-<mesh filename="package:///part_1.stl"/>
+<mesh filename="package://battle_bot_description/meshes/ankle_mount.stl"/>
 </geometry>
-<material name="part_1_material">
+<material name="ankle_mount_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
 </material>
 </collision>
 <inertial>
-<origin xyz="-0.00496699 -1.30537e-17 0.00657987" rpy="0 0 0"/>
+<origin xyz="-0.00496699 -1.32419e-17 0.00657987" rpy="0 0 0"/>
 <mass value="0.00578055" />
 <inertia ixx="3.06238e-07" ixy="-1.0859e-23"  ixz="8.94401e-09" iyy="9.21258e-07" iyz="7.89028e-26" izz="8.48031e-07" />
 </inertial>
@@ -159,7 +160,7 @@
 <visual>
 <origin xyz="1.38778e-17 -0.000206107 -0.00575" rpy="-1.5708 -6.56188e-32 1.47196e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -168,7 +169,7 @@
 <collision>
 <origin xyz="1.38778e-17 -0.000206107 -0.00575" rpy="-1.5708 -6.56188e-32 1.47196e-17" />
 <geometry>
-<mesh filename="package:///servo.stl"/>
+<mesh filename="package://battle_bot_description/meshes/servo.stl"/>
 </geometry>
 <material name="servo_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -185,7 +186,7 @@
 <visual>
 <origin xyz="0 0 0.00225" rpy="3.14159 -5.23129e-30 -2.32809e-31" />
 <geometry>
-<mesh filename="package:///left_foot.stl"/>
+<mesh filename="package://battle_bot_description/meshes/left_foot.stl"/>
 </geometry>
 <material name="left_foot_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -194,7 +195,7 @@
 <collision>
 <origin xyz="0 0 0.00225" rpy="3.14159 -5.23129e-30 -2.32809e-31" />
 <geometry>
-<mesh filename="package:///left_foot.stl"/>
+<mesh filename="package://battle_bot_description/meshes/left_foot.stl"/>
 </geometry>
 <material name="left_foot_material">
 <color rgba="0.615686 0.811765 0.929412 1.0"/>
@@ -207,7 +208,7 @@
 </inertial>
 </link>
 
-<joint name="ankle_servo_h" type="revolute">
+<joint name="ankle_servo_h" type="continuous">
 <origin xyz="0.00575 0.0237939 -0.00575" rpy="-1.5708 -1.5708 0" />
 <parent link="servo_4" />
 <child link="left_foot" />
@@ -218,17 +219,17 @@
 
 <joint name="ankle" type="fixed">
 <origin xyz="-0.00540709 -0.00271 0.0075" rpy="-3.14159 -3.11007e-26 -1.47196e-17" />
-<parent link="part_1" />
+<parent link="ankle_mount" />
 <child link="servo_4" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
 
-<joint name="ankle_servo_v" type="revolute">
+<joint name="ankle_servo_v" type="continuous">
 <origin xyz="0.0195 6.93889e-18 0.017" rpy="5.52479e-16 -4.02837e-16 1.17242" />
 <parent link="servo_3" />
-<child link="part_1" />
+<child link="ankle_mount" />
 <axis xyz="0 0 1"/>
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
@@ -243,7 +244,7 @@
 <joint_properties friction="0.0"/>
 </joint>
 
-<joint name="knee_servo" type="revolute">
+<joint name="knee_servo" type="continuous">
 <origin xyz="0 -0.023 -0.01725" rpy="-1.5708 0.474293 -3.18767e-16" />
 <parent link="servo_2" />
 <child link="knee_mount" />
@@ -261,7 +262,7 @@
 <joint_properties friction="0.0"/>
 </joint>
 
-<joint name="thigh_servo" type="revolute">
+<joint name="thigh_servo" type="continuous">
 <origin xyz="0.0813147 0.0614459 -0.0195855" rpy="1.5708 -0.959931 -3.87553e-14" />
 <parent link="thigh_bracket" />
 <child link="servo" />
@@ -269,6 +270,46 @@
 <limit effort="1" velocity="20" />
 <joint_properties friction="0.0"/>
 </joint>
+
+<transmission name="ankle_servo_v_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$ankle_servo_v_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="ankle_servo_v">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="ankle_servo_v_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$ankle_servo_v_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="ankle_servo_v">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="knee_servo_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$knee_servo_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="knee_servo">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
+
+<transmission name="thigh_servo_trans">
+  <type>transmission_interface/SimpleTransmission</type>
+  <actuator name="$thigh_servo_motor">
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+  <joint name="thigh_servo">
+    <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
+  </joint>
+</transmission>
 
 
 </robot>
